@@ -23,3 +23,4 @@ Tests are runnable with ``npm run test``
 * table size is 5 with positions 0-4 inclusively for both x and y
 * place command has one space between "PLACE" and the coordinate, after this it is comma separated
 * The output has no spaces between commas and the next item (this is inline with specification)
+* This was tested on windows
