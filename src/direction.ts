@@ -34,5 +34,3 @@ export const textToDirection = (direction: string) => {
       throw Error("unexpected direction");
   }
 };
-
-export const validateDirection = (text: string) => /NORTH|EAST|SOUTH|WEST/.test(text);

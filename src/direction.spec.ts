@@ -1,4 +1,4 @@
-import { directionToText, EDirection, textToDirection, validateDirection } from "./direction";
+import { directionToText, EDirection, textToDirection } from "./direction";
 
 describe("direction To Text", () => {
 
@@ -36,33 +36,5 @@ describe("text to direction", () => {
   
   it("WEST", () => {
     expect(textToDirection("WEST")).toBe(EDirection.WEST);
-  });
-});
-
-describe("validateDirection", () => {
-
-  it("invalid direction", () => {
-    expect(validateDirection("")).toBe(false);
-    expect(validateDirection("north")).toBe(false);
-  });
-
-  describe("on valid directions", () => {
-
-    it("NORTH", () => {
-      expect(validateDirection("NORTH")).toBe(true);
-    });
-    
-    it("SOUTH", () => {
-      expect(validateDirection("SOUTH")).toBe(true);
-    });
-    
-    it("EAST", () => {
-      expect(validateDirection("EAST")).toBe(true);
-    });
-    
-    it("WEST", () => {
-      expect(validateDirection("WEST")).toBe(true);
-    });
-
   });
 });
