@@ -11,9 +11,9 @@ Logic:
   ✔ place @done(21-10-13 15:56)
 IO:
   ☐ Read commands
-  ☐ command validation and tests
-  ☐ command parsing and tests
-  ☐ write output
+  ✔ command validation and tests @done(21-10-13 19:12)
+  ✔ command parsing and tests @done(21-10-13 19:26)
+  ✔ write output @done(21-10-13 19:12)
 Readme:
   ☐ setup
   ☐ running

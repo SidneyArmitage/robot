@@ -1,12 +1,12 @@
 import { EDirection } from "./direction";
 
 export enum Command {
-  LEFT,
-  MOVE,
-  PLACE,
-  REPORT,
-  RIGHT,
-}
+  LEFT = "LEFT",
+  MOVE = "MOVE",
+  PLACE = "PLACE",
+  REPORT = "REPORT",
+  RIGHT = "RIGHT",
+};
 
 export interface INotPlaced {
   isPlaced: false;

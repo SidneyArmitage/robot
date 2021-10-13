@@ -6,9 +6,19 @@ import { place } from "./place";
 import { report } from "./report";
 import { left, right } from "./rotate";
 
-export const command = (message: (value: string) => void, state: State = {
+export type CommandOutput = {
+  move: () => CommandOutput
+  place: (x: number, y: number, face: EDirection) => CommandOutput
+  report: () => CommandOutput
+  left: () => CommandOutput
+  right: () => CommandOutput
+};
+
+export type Command = (message: (value: string) => void, state?: State ) => CommandOutput;
+
+export const command: Command = (message, state= {
   isPlaced: false
-}) => {
+}): CommandOutput => {
   return {
     move: () => checkIfPlaced(message, state, move),
     place: (x: number, y: number, face: EDirection) => command(message, place(x, y, face)),
