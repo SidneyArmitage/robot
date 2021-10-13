@@ -146,6 +146,19 @@ describe("process", () => {
     });
     expect(counter).toBe(1);
   });
+  
+  it("trims inputs on valid inputs", () => {
+    let counter = 0;
+    process([
+      " PLACE 0,0,NORTH",
+      "MOVE ",
+      "REPORT",
+    ], (message) => {
+      counter += 1;
+      expect(message).toBe("0,1,NORTH");
+    });
+    expect(counter).toBe(1);
+  });
 
   it("ignores invalid inputs", () => {
     let counter = 0;

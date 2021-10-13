@@ -15,10 +15,8 @@ IO:
   ✔ command parsing and tests @done(21-10-13 19:26)
   ✔ write output @done(21-10-13 19:12)
 Readme:
-  ☐ setup
-  ☐ running
-  ☐ rules
-  ☐ commands
+  ✔ setup @done(21-10-13 20:22)
+  ✔ running @done(21-10-13 20:25)
 0, 0 is south west corner
 size is 5 by 5 (so 0 to 4)
 invalid commands must be ignored but programme must continue
