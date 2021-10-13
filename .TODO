@@ -1,0 +1,25 @@
+Types:
+  ✔ Directions (NORTH SOUTH EAST WEST) @done(21-10-13 13:42)
+  ✔ Commands (PLACE, MOVE, LEFT, RIGHT, REPORT) @done(21-10-13 13:42)
+  ✔ State (isPlaced, x, y, face) @done(21-10-13 13:42)
+Logic:
+  ✔ Command @done(21-10-13 17:33)
+  ✔ move @done(21-10-13 14:50)
+  ✔ report @done(21-10-13 17:00)
+  ✔ left @done(21-10-13 14:34)
+  ✔ right @done(21-10-13 14:34)
+  ✔ place @done(21-10-13 15:56)
+IO:
+  ☐ Read commands
+  ☐ command validation and tests
+  ☐ command parsing and tests
+  ☐ write output
+Readme:
+  ☐ setup
+  ☐ running
+  ☐ rules
+  ☐ commands
+0, 0 is south west corner
+size is 5 by 5 (so 0 to 4)
+invalid commands must be ignored but programme must continue
+every logic module must have a test
