@@ -26,5 +26,5 @@ export const run = (app: CommandOutput, instruction: string): CommandOutput => {
 };
 
 export const process = (input: string[], output: (message: string) => void) => {
-  input.filter(validate).reduce(run, command(output));
+  input.map(instruction => instruction.trim()).filter(validate).reduce(run, command(output));
 };
