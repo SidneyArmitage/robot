@@ -4,6 +4,8 @@
 
 node js and npm should be installed.
 
+Jest and typescript may need to be installed globally.
+
 1) using the console run "``npm i``" in the project directory
 
 2) test install by running  "``npm run a``" which will run the "a.txt" file in input.
@@ -15,7 +17,7 @@ File extension must be included in the file uri.
 
 ## Tests
 
-Tests are runnable with ``npm run test``
+Tests are written using **jest** runnable with ``npm run test``
 
 ## Assumptions and Notes
 
