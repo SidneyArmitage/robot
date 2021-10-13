@@ -10,7 +10,7 @@ describe("command", () => {
       // test report twice to ensure object is returned
       command((message) => {
         counter += 1;
-        expect(message).toBe("0, 0, NORTH");
+        expect(message).toBe("0,0,NORTH");
       }).place(0, 0, EDirection.NORTH)
       .report()
       .report();
@@ -32,7 +32,7 @@ describe("command", () => {
       // test report twice to ensure object is returned
       command((message) => {
         counter += 1;
-        expect(message).toBe("0, 1, NORTH");
+        expect(message).toBe("0,1,NORTH");
       }).place(0, 0, EDirection.NORTH)
       .move()
       .report();
@@ -44,7 +44,7 @@ describe("command", () => {
       // test report twice to ensure object is returned
       command((message) => {
         counter += 1;
-        expect(message).toBe("0, 0, WEST");
+        expect(message).toBe("0,0,WEST");
       }).place(0, 0, EDirection.NORTH)
       .left()
       .report();
@@ -56,7 +56,7 @@ describe("command", () => {
       // test report twice to ensure object is returned
       command((message) => {
         counter += 1;
-        expect(message).toBe("0, 0, EAST");
+        expect(message).toBe("0,0,EAST");
       }).place(0, 0, EDirection.NORTH)
       .right()
       .report();

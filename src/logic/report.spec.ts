@@ -10,7 +10,7 @@ describe("report", () => {
       face: EDirection.NORTH,
       isPlaced: true,
     }, (value) => {
-      expect(value).toBe("0, 0, NORTH");
+      expect(value).toBe("0,0,NORTH");
     });
   });
 });
